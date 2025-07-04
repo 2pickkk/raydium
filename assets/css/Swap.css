@@ -1,0 +1,370 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    height: var(--chakra-sizes-full);
+    overflow: auto;
+}
+
+.main-content {
+    padding-inline: 20px;
+    padding-top: 0px;
+    flex: 1 1 0%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-gutter: stable;
+    contain: size;
+}
+
+.swap-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: min(100%, 1300px);
+}
+
+.swap-grid {
+    display: grid;
+    row-gap: var(--chakra-space-2);
+    column-gap: var(--chakra-space-3);
+    width: var(--chakra-sizes-full);
+    grid-template-areas: "controls""panel""kline";
+    grid-template-columns: 1fr;
+}
+
+.button-slippage {
+    height: fit-content;
+    padding: var(--chakra-space-1) var(--chakra-space-2);
+    border-radius: var(--chakra-radii-full);
+    background: var(--button-bg-01);
+    color: var(--text-secondary);
+    font-size: var(--chakra-fontSizes-sm);
+    font-weight: var(--chakra-fontWeights-normal);
+    border: 1px solid transparent;
+}
+
+.button-slippage:hover:not(:disabled) {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.button-slippage:hover:not(:disabled) .chakra-icon-hover {
+    fill: var(--secondary);
+}
+
+.button-icon-span {
+    display: inline-flex;
+    align-self: center;
+    flex-shrink: 0;
+    margin-inline-end: var(--chakra-space-1);
+}
+
+.button-amount {
+    height: 20px;
+    font-size: var(--chakra-fontSizes-xs);
+    padding-inline: 6px;
+    background: var(--background-transparent12);
+    color: var(--text-tertiary);
+    border-radius: 4px;
+}
+
+.button-amount:hover:not(:disabled) {
+    background: var(--background-transparent07);
+}
+
+.button-amount:active:not(:disabled) {
+    color: var(--text-secondary);
+}
+
+.swap-controls {
+    grid-area: controls;
+}
+
+.swap-controls-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: var(--chakra-space-1) 0;
+}
+
+.icon-text-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.clickable-icon {
+    cursor: pointer;
+}
+
+.buy-text {
+    color: var(--text-link);
+    font-weight: var(--chakra-fontWeights-medium);
+}
+
+.swap-panel-area {
+    grid-area: panel;
+}
+
+.swap-panel {
+    background: var(--background-light);
+    border: var(--panel-card-border);
+    box-shadow: var(--panel-card-shadow);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--chakra-space-3);
+    flex-grow: 1;
+}
+
+.swap-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--chakra-space-4);
+}
+
+.token-input-wrapper {
+    background: var(--background-dark50);
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+.token-input-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    pointer-events: initial;
+    padding: 12px 18px;
+}
+
+.token-input-label {
+    font-size: var(--chakra-fontSizes-sm);
+    font-weight: 500;
+}
+
+.token-input-header-spacer {
+    flex: 1 1 0%;
+    align-self: stretch;
+}
+
+.balance-container {
+    display: flex;
+    align-items: center;
+    gap: var(--chakra-space-0-5);
+    color: var(--text-tertiary);
+    font-size: var(--chakra-fontSizes-sm);
+}
+
+.balance-text {
+    cursor: pointer;
+    text-decoration: underline 0.5px;
+    transition: 300ms;
+    text-underline-offset: 1px;
+}
+
+.balance-text:hover {
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
+.amount-buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.token-input-grid {
+    display: grid;
+    column-gap: var(--chakra-space-2);
+    grid-template: "token input""token price"/ auto 1fr;
+    align-items: center;
+    pointer-events: initial;
+    border-radius: 12px;
+    padding: var(--chakra-space-2) 18px;
+    background: var(--background-dark);
+}
+
+.token-selector-button {
+    grid-area: token;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: var(--chakra-fontSizes-2xl);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--background-light);
+    border-radius: 12px;
+    padding: var(--chakra-space-2-5) var(--chakra-space-3);
+    cursor: pointer;
+}
+
+.token-name {
+    color: var(--text-primary);
+}
+
+.token-avatar {
+    background: var(--token-avatar-bg);
+    border: var(--chakra-borders-none);
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 50%;
+    padding: 0.15em;
+    font-size: 32px;
+}
+
+.token-avatar-image-wrapper {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.token-avatar-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.amount-input-container {
+    grid-area: input;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.amount-usd-value-container {
+    grid-area: price;
+}
+
+.amount-usd-value {
+    color: var(--text-tertiary);
+    font-size: var(--chakra-fontSizes-sm);
+    text-align: right;
+}
+
+.swap-icon-container {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-content: center;
+    border-radius: var(--chakra-radii-full);
+    cursor: pointer;
+    margin: calc(var(--chakra-space-3) * -1) auto;
+    z-index: 2;
+}
+
+.kline-area {
+    grid-area: kline;
+    overflow: hidden;
+}
+
+.kline-container {
+    background: var(--background-light);
+    border: var(--panel-card-border);
+    box-shadow: var(--panel-card-shadow);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--chakra-space-3);
+    gap: var(--chakra-space-4);
+    height: 100%;
+}
+
+.kline-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--chakra-space-2);
+}
+
+.kline-token-icons {
+    display: flex;
+}
+
+.token-icon-primary {
+    background: var(--token-avatar-bg);
+    border: var(--chakra-borders-none);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0.15em;
+    font-size: 32px;
+    backdrop-filter: blur(2px);
+}
+
+.token-icon-secondary {
+    background: var(--token-avatar-bg);
+    border: var(--chakra-borders-none);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0.15em;
+    font-size: 32px;
+    backdrop-filter: blur(2px);
+    margin-left: -4px;
+}
+
+.kline-pair-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.kline-timestamp {
+    font-size: var(--chakra-fontSizes-sm);
+    color: var(--text-tertiary);
+}
+
+.kline-chart-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+@media screen and (min-width: 48em) {
+    .main-content {
+        padding-inline: max(-800px + 50vw, 7%);
+        padding-top: var(--chakra-space-4);
+    }
+
+    .swap-container {
+        margin-top: clamp(0px, -51.2px + 6.4vh, 32px);
+    }
+
+    .swap-grid {
+        column-gap: var(--chakra-space-4);
+        grid-template-areas: ". controls""kline panel";
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .swap-controls-header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .swap-panel {
+        border-radius: 20px;
+        padding: var(--chakra-space-6);
+        flex-grow: unset;
+    }
+
+    .swap-form-container {
+        margin-bottom: var(--chakra-space-5);
+    }
+
+    .token-input-grid {
+        column-gap: var(--chakra-space-4);
+    }
+
+    .kline-container {
+        border-radius: 20px;
+        padding: var(--chakra-space-3);
+    }
+}

@@ -1,0 +1,358 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    height: var(--chakra-sizes-full);
+    overflow: auto;
+}
+
+.main-content {
+    padding-inline: 20px;
+    padding-top: 0px;
+    flex: 1 1 0%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-gutter: stable;
+    contain: size;
+}
+
+.portfolio-container {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.page-hero {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.page-hero-title {
+    color: var(--chakra-colors-transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: var(--text-hero-title);
+    font-weight: 700;
+    background-image: var(--brand-gradient);
+}
+
+.section-heading {
+    font-family: var(--chakra-fonts-heading);
+    line-height: 1.33;
+    font-size: var(--chakra-fontSizes-lg);
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.overview-grid {
+    display: grid;
+    gap: var(--chakra-space-3);
+    overflow: scroll;
+    margin-inline: calc(var(--chakra-space-5) * -1);
+    padding-inline: var(--chakra-space-5);
+    scroll-snap-type: x mandatory;
+}
+
+.overview-card,
+.idle-tokens-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-medium);
+    border: var(--panel-card-border);
+    box-shadow: var(--chakra-shadows-none);
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 300px;
+    scroll-snap-align: start;
+    scroll-margin: var(--chakra-space-5);
+}
+
+.overview-card {
+    flex: 4 1 0%;
+}
+
+.idle-tokens-card {
+    flex: 5 1 0%;
+}
+
+.card-header {
+    background: var(--background-medium);
+    font-weight: var(--chakra-fontWeights-medium);
+    height: 48px;
+    padding-left: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background: var(--background-light);
+    padding: 30px 20px;
+}
+
+.overview-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: var(--chakra-space-8);
+    flex-grow: inherit;
+    background: var(--background-light);
+}
+
+.tabs-container {
+    display: block;
+    position: relative;
+}
+
+.tabs-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative;
+    border-bottom: var(--chakra-borders-none);
+    background: var(--tab-folder-tab-list-bg);
+    gap: var(--chakra-space-1);
+}
+
+.tab-button {
+    flex: 1 1 0%;
+    position: relative;
+    color: var(--text-secondary);
+    transition: 150ms;
+    font-size: var(--chakra-fontSizes-md);
+    padding: 12px 1em;
+    font-weight: 400;
+    background: transparent;
+    margin-inline: 3%;
+    cursor: pointer;
+    min-width: 2em;
+    display: grid;
+    place-items: center;
+    white-space: normal;
+    border: none !important;
+}
+
+.tab-button[aria-selected="true"] {
+    color: var(--text-primary);
+    font-weight: 500;
+    background: var(--background-light);
+}
+
+.tab-button[aria-selected="true"]::before,
+.tab-button[aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 36px;
+    background: inherit;
+}
+
+.tab-button[aria-selected="true"]::before {
+    left: -20px;
+    border-radius: 10px 0px 0px;
+    transform: skew(335deg);
+}
+
+.tab-button[aria-selected="true"]::after {
+    right: -20px;
+    border-radius: 0px 10px 0px 0px;
+    transform: skew(25deg);
+}
+
+.tab-indicator {
+    bottom: 2px;
+    background-image: var(--brand-gradient);
+    height: 2px;
+    border-radius: var(--chakra-radii-md);
+    transform: scaleX(0.2);
+    transition-duration: 300ms !important;
+}
+
+.positions-grid {
+    display: grid;
+    row-gap: var(--chakra-space-3);
+    column-gap: var(--chakra-space-3);
+    grid-template-areas:
+        "title tabs"
+        "action action";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: var(--chakra-space-3);
+    margin-top: var(--chakra-space-6);
+    align-items: center;
+}
+
+.positions-title-container {
+    grid-area: title;
+}
+
+.positions-tabs-container {
+    grid-area: tabs;
+    justify-self: right;
+}
+
+.positions-action-area {
+    grid-area: action;
+    justify-self: stretch;
+}
+
+.positions-title-group {
+    display: flex;
+    gap: var(--chakra-space-2);
+    align-items: center;
+}
+
+.tabs-container-secondary {
+    display: block;
+    position: relative;
+    background: var(--background-transparent12);
+    border-radius: 27px;
+    padding: 4px;
+    width: fit-content;
+}
+
+.tabs-list-secondary {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative;
+    border-bottom: none;
+    gap: var(--chakra-space-1);
+}
+
+.tab-button-secondary {
+    position: relative;
+    color: var(--text-secondary);
+    transition: 150ms;
+    font-size: var(--chakra-fontSizes-md);
+    padding: 4px 1em;
+    font-weight: 500;
+    z-index: 2;
+    cursor: pointer;
+    white-space: nowrap;
+    min-width: 2em;
+    display: grid;
+    place-items: center;
+    border: none !important;
+}
+
+.tab-button-secondary[aria-selected="true"] {
+    color: var(--text-revert-primary);
+    background-color: transparent;
+}
+
+.tab-indicator-secondary {
+    background: var(--brand-gradient);
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    border-radius: 27px;
+    transition-duration: 300ms !important;
+}
+
+.positions-content-area {
+    display: grid;
+    background: var(--background-light);
+    border: var(--panel-card-border);
+    box-shadow: var(--panel-card-shadow);
+    border-radius: 12px;
+    overflow: hidden;
+    place-items: center;
+    padding: var(--chakra-space-12) 0;
+}
+
+.empty-state-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 1 0%;
+    padding: var(--chakra-space-8) 0;
+}
+
+.empty-state-text {
+    text-align: center;
+    color: var(--text-tertiary);
+}
+
+.empty-state-text-secondary {
+    color: var(--text-tertiary);
+}
+
+.empty-state-text-positions {
+    margin: var(--chakra-space-8) 0;
+    color: var(--text-tertiary);
+    font-size: var(--chakra-fontSizes-sm);
+}
+
+.page-bottom-spacer {
+    padding-bottom: 40px;
+}
+
+.clickable-icon {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 48em) {
+    .main-content {
+        padding-inline: max(-800px + 50vw, 7%);
+        padding-top: var(--chakra-space-4);
+    }
+
+    .section-heading {
+        font-size: var(--chakra-fontSizes-xl);
+        margin-bottom: var(--chakra-space-4);
+        margin-top: var(--chakra-space-6);
+    }
+
+    .overview-grid {
+        gap: var(--chakra-space-8);
+        grid-template-columns: 1fr 1fr;
+        margin-inline: 0px;
+        padding-inline: 0px;
+        overflow: visible;
+    }
+
+    .tab-button,
+    .tab-button-secondary {
+        min-width: 3em;
+    }
+
+    .card-content {
+        padding-inline: 30px;
+    }
+
+    .positions-grid {
+        row-gap: var(--chakra-space-2);
+        grid-template-areas:
+            "title title"
+            "tabs action";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .positions-tabs-container {
+        justify-self: left;
+    }
+
+    .positions-action-area {
+        justify-self: stretch;
+    }
+
+    .empty-state-text-positions {
+        font-size: var(--chakra-fontSizes-md);
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .section-heading {
+        line-height: 1.2;
+    }
+
+    .positions-action-area {
+        justify-self: right;
+    }
+}

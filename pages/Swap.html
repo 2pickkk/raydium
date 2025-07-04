@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark" style="color-scheme:dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Swap | Raydium</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/Swap.css">
+</head>
+
+<body class="chakra-ui-dark">
+    <div id="app-layout" class="app-layout">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="Swap.html">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34.3297 15.8661V28.7492L20 37.021L5.66234 28.7492V12.1978L20 3.91808L31.013 10.2797L32.6753 9.32068L20 2L4 11.2388V29.7083L20 38.947L36 29.7083V14.9071L34.3297 15.8661Z"
+                            fill="url(#a)"></path>
+                        <path
+                            d="M15.988 28.7572H13.5904V20.7173H21.5824C22.3385 20.7089 23.061 20.4031 23.5934 19.8662C24.1259 19.3293 24.4255 18.6043 24.4276 17.8481C24.4319 17.4742 24.3597 17.1034 24.2154 16.7584C24.0711 16.4134 23.8577 16.1016 23.5884 15.8421C23.3278 15.5743 23.0158 15.362 22.6711 15.2178C22.3264 15.0736 21.9561 15.0005 21.5824 15.003H13.5904V12.5574H21.5904C22.991 12.5658 24.3319 13.1259 25.3222 14.1163C26.3126 15.1067 26.8727 16.4475 26.8811 17.8481C26.8897 18.9202 26.5627 19.9681 25.9461 20.8451C25.3785 21.6842 24.5786 22.3397 23.6444 22.7313C22.7193 23.0246 21.7537 23.1703 20.7832 23.1628H15.988V28.7572Z"
+                            fill="url(#b)"></path>
+                        <path
+                            d="M26.8252 28.5574H24.028L21.8701 24.7932C22.7238 24.741 23.5659 24.5688 24.3716 24.2817L26.8252 28.5574Z"
+                            fill="url(#c)"></path>
+                        <path
+                            d="M32.6593 13.1888L34.3137 14.1079L35.968 13.1888V11.2467L34.3137 10.2877L32.6593 11.2467V13.1888Z"
+                            fill="url(#d)"></path>
+                        <defs>
+                            <lineargradient id="a" x1="35.9717" y1="11.2489" x2="2.04291" y2="24.817"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C200FB"></stop>
+                                <stop offset="0.489658" stop-color="#3772FF"></stop>
+                                <stop offset="1" stop-color="#5AC4BE"></stop>
+                            </lineargradient>
+                            <lineargradient id="b" x1="35.9717" y1="11.2489" x2="2.04291" y2="24.817"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C200FB"></stop>
+                                <stop offset="0.489658" stop-color="#3772FF"></stop>
+                                <stop offset="1" stop-color="#5AC4BE"></stop>
+                            </lineargradient>
+                            <lineargradient id="c" x1="35.9717" y1="11.2489" x2="2.04291" y2="24.817"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C200FB"></stop>
+                                <stop offset="0.489658" stop-color="#3772FF"></stop>
+                                <stop offset="1" stop-color="#5AC4BE"></stop>
+                            </lineargradient>
+                            <lineargradient id="d" x1="35.9717" y1="11.2489" x2="2.04291" y2="24.817"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C200FB"></stop>
+                                <stop offset="0.489658" stop-color="#3772FF"></stop>
+                                <stop offset="1" stop-color="#5AC4BE"></stop>
+                            </lineargradient>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="navbar-links-container">
+                <a href="Swap.html" class="nav-link nav-link-active">Swap</a>
+                <a href="#" class="nav-link">Liquidity</a>
+                <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                <a href="#" class="nav-link">Perpetuals</a>
+                <a href="#" class="nav-link-launchlab"><span class="launchlab-text">LaunchLab</span>
+                    <svg width="35" height="14" viewBox="0 0 35 14" fill="none" class="chakra-icon"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.70958 2.74762C4.25016 1.10785 5.78188 0 7.50846 0H28.4696C31.1942 0 33.1215 2.66469 32.2684 5.25238L30.2904 11.2524C29.7498 12.8922 28.2181 14 26.4915 14H5.53044C2.80576 14 0.87847 11.3353 1.73155 8.74762L3.70958 2.74762Z"
+                            fill="url(#paint0_linear_38575_9343)"></path>
+                        <path
+                            d="M14.0498 2.89062L12.8193 10H11.6865L10.1777 4.90723L9.29395 10H8.13184L9.36719 2.89062H10.4951L12.0137 7.99316L12.9023 2.89062H14.0498ZM18.6318 9.00879L18.4561 10H15.458L15.6289 9.00879H18.6318ZM17.001 2.89062L15.7656 10H14.6084L15.8438 2.89062H17.001ZM18.7783 5.84961L18.6074 6.82617H16.0098L16.1807 5.84961H18.7783ZM19.6621 2.89062L19.4912 3.88672H16.5127L16.6885 2.89062H19.6621ZM21.6758 8.38867L23.6289 2.89062H24.3223L24.0684 4.33594L22.0078 10H21.2705L21.6758 8.38867ZM21.832 2.89062L21.8467 8.45703L21.6465 10H20.8945L20.7041 2.89062H21.832ZM24.6641 8.33008L26.373 2.89062H27.5352L25.1328 10H24.3613L24.6641 8.33008ZM24.5908 2.89062L24.8154 8.50098L24.7227 10H24.0195L23.7412 4.22363L23.917 2.89062H24.5908Z"
+                            fill="#0B1022"></path>
+                        <defs>
+                            <lineargradient id="paint0_linear_38575_9343" x1="33.9699" y1="3.50461" x2="15.4464"
+                                y2="24.2754" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF2FC8"></stop>
+                                <stop offset="0.489658" stop-color="#FFB12B"></stop>
+                                <stop offset="1" stop-color="#D3D839"></stop>
+                            </lineargradient>
+                        </defs>
+                    </svg>
+                </a>
+                <button class="menu-button" id="more-button">
+                    <span class="menu-button-inner-span">
+                        <div class="menu-button-text-container">More<svg width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" class="chakra-icon" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg></div>
+                    </span>
+                </button>
+            </div>
+            <div class="navbar-actions">
+                <button type="button" class="button button-outline-rewards" id="rewards-button"><span
+                        class="launchlab-text">Rewards</span></button>
+                <div class="priority-button-container">
+                    <button type="button" class="button button-priority" id="priority-button"><span class="priority-button-text">Priority:<span
+                                class="priority-button-status">Turbo</span></span></button>
+                </div>
+                <div class="settings-icon-container" id="settings-button"><svg width="24" height="24" viewBox="0 0 24 24"
+                        fill="var(--text-secondary)" class="chakra-icon" stroke="none" stroke-width="1.4"
+                        stroke-linecap="round">
+                        <g clip-path="url(#clip0_20584_4388)">
+                            <path
+                                d="M23.0603 15.0496L21.3058 13.5496C21.3888 13.0406 21.4317 12.521 21.4317 12.0013C21.4317 11.4817 21.3888 10.9621 21.3058 10.4531L23.0603 8.95312C23.1926 8.83984 23.2873 8.68895 23.3318 8.52053C23.3763 8.35211 23.3685 8.17413 23.3094 8.01027L23.2853 7.94062C22.8023 6.59069 22.079 5.33929 21.1505 4.24687L21.1022 4.19062C20.9896 4.05817 20.8395 3.96296 20.6716 3.91754C20.5038 3.87211 20.3261 3.87861 20.1621 3.93616L17.9844 4.71027C17.1808 4.05134 16.2835 3.5317 15.3138 3.16741L14.8933 0.890625C14.8616 0.719309 14.7785 0.561703 14.655 0.438744C14.5316 0.315785 14.3737 0.233295 14.2022 0.202232L14.1299 0.188839C12.7344 -0.0629464 11.2665 -0.0629464 9.87099 0.188839L9.79867 0.202232C9.62723 0.233295 9.4693 0.315785 9.34586 0.438744C9.22243 0.561703 9.13932 0.719309 9.1076 0.890625L8.68438 3.17812C7.72248 3.54249 6.8267 4.06185 6.0326 4.71562L3.83884 3.93616C3.67482 3.87815 3.49703 3.87142 3.3291 3.91687C3.16116 3.96233 3.01104 4.05781 2.89867 4.19062L2.85045 4.24687C1.92299 5.34006 1.19985 6.59126 0.71563 7.94062L0.691523 8.01027C0.570988 8.34509 0.670095 8.72009 0.94063 8.95312L2.71652 10.4692C2.63349 10.9728 2.59331 11.4871 2.59331 11.9987C2.59331 12.5129 2.63349 13.0272 2.71652 13.5281L0.94063 15.0442C0.808298 15.1575 0.713585 15.3084 0.669088 15.4768C0.62459 15.6452 0.632415 15.8232 0.691523 15.9871L0.71563 16.0567C1.20045 17.4067 1.91831 18.6522 2.85045 19.7504L2.89867 19.8067C3.01131 19.9391 3.16144 20.0344 3.32928 20.0798C3.49711 20.1252 3.67477 20.1187 3.83884 20.0612L6.0326 19.2817C6.83081 19.9379 7.72277 20.4576 8.68438 20.8192L9.1076 23.1067C9.13932 23.278 9.22243 23.4356 9.34586 23.5586C9.4693 23.6815 9.62723 23.764 9.79867 23.7951L9.87099 23.8085C11.2793 24.0616 12.7216 24.0616 14.1299 23.8085L14.2022 23.7951C14.3737 23.764 14.5316 23.6815 14.655 23.5586C14.7785 23.4356 14.8616 23.278 14.8933 23.1067L15.3138 20.8299C16.2831 20.4666 17.1855 19.9452 17.9844 19.2871L20.1621 20.0612C20.3261 20.1192 20.5039 20.1259 20.6718 20.0804C20.8397 20.035 20.9899 19.9395 21.1022 19.8067L21.1505 19.7504C22.0826 18.6496 22.8005 17.4067 23.2853 16.0567L23.3094 15.9871C23.4299 15.6576 23.3308 15.2826 23.0603 15.0496V15.0496ZM19.404 10.7692C19.471 11.1737 19.5058 11.5888 19.5058 12.004C19.5058 12.4192 19.471 12.8344 19.404 13.2388L19.2272 14.3129L21.2281 16.0246C20.9248 16.7234 20.5419 17.3849 20.0871 17.996L17.6013 17.1147L16.7603 17.8058C16.1201 18.3308 15.4076 18.7433 14.6362 19.0326L13.6156 19.4156L13.1362 22.0138C12.3797 22.0996 11.6159 22.0996 10.8594 22.0138L10.3799 19.4103L9.36742 19.0219C8.60402 18.7326 7.8942 18.3201 7.25938 17.7978L6.41831 17.104L3.91652 17.9933C3.46117 17.3799 3.08081 16.7183 2.77545 16.0219L4.79777 14.2942L4.62367 13.2228C4.55938 12.8237 4.52456 12.4112 4.52456 12.004C4.52456 11.5942 4.5567 11.1844 4.62367 10.7853L4.79777 9.71384L2.77545 7.98616C3.07813 7.28705 3.46117 6.62812 3.91652 6.01473L6.41831 6.90402L7.25938 6.21027C7.8942 5.68795 8.60402 5.27545 9.36742 4.98616L10.3826 4.60312L10.8621 1.99955C11.6147 1.91384 12.3835 1.91384 13.1388 1.99955L13.6183 4.59777L14.6388 4.9808C15.4076 5.27009 16.1228 5.68259 16.763 6.20759L17.604 6.89866L20.0897 6.01741C20.5451 6.6308 20.9255 7.29241 21.2308 7.98884L19.2299 9.70045L19.404 10.7692ZM12.0031 7.02187C9.39956 7.02187 7.28885 9.13259 7.28885 11.7362C7.28885 14.3397 9.39956 16.4504 12.0031 16.4504C14.6067 16.4504 16.7174 14.3397 16.7174 11.7362C16.7174 9.13259 14.6067 7.02187 12.0031 7.02187ZM14.1246 13.8576C13.8463 14.1366 13.5156 14.3579 13.1516 14.5087C12.7875 14.6595 12.3972 14.7368 12.0031 14.7362C11.2022 14.7362 10.4496 14.4228 9.8817 13.8576C9.60266 13.5793 9.38138 13.2487 9.2306 12.8846C9.07982 12.5205 9.00252 12.1302 9.00313 11.7362C9.00313 10.9353 9.31652 10.1826 9.8817 9.61473C10.4496 9.04687 11.2022 8.73616 12.0031 8.73616C12.804 8.73616 13.5567 9.04687 14.1246 9.61473C14.4036 9.89298 14.6249 10.2236 14.7757 10.5877C14.9264 10.9518 15.0037 11.3421 15.0031 11.7362C15.0031 12.5371 14.6897 13.2897 14.1246 13.8576Z"></path></g>
+                        <defs><clippath id="clip0_20584_4388)"><rect width="24" height="24"></rect></clippath></defs>
+                    </svg>
+                </div>
+                <div class="wallet-button-container"><button type="button" class="button button-solid" id="connect-wallet-button">Connect Wallet</button></div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="swap-container">
+                <div class="swap-grid">
+                    <div class="swap-controls">
+                        <div class="swap-controls-header">
+                            <div class="clickable-icon">
+                                <div class="icon-text-group"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="chakra-icon" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.75 7.5H17.25" stroke="#22D1F8" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M15.75 3H2.25C1.42157 3 0.75 3.67157 0.75 4.5V13.5C0.75 14.3284 1.42157 15 2.25 15H15.75C16.5784 15 17.25 14.3284 17.25 13.5V4.5C17.25 3.67157 16.5784 3 15.75 3Z"
+                                            stroke="#22D1F8" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <rect x="3" y="10.25" width="2.5" height="1.5" fill="#8C6EEF"></rect>
+                                        <rect x="6.5" y="10.25" width="2.5" height="1.5" fill="#8C6EEF"></rect>
+                                        <rect x="10" y="10.25" width="2.5" height="1.5" fill="#8C6EEF"></rect>
+                                    </svg>
+                                    <p class="buy-text">Buy</p>
+                                </div>
+                            </div>
+                            <div class="icon-text-group">
+                                <div class="priority-button-container">
+                                    <button type="button" class="button button-slippage">
+                                        <span class="button-icon-span"><svg width="14" height="14" viewBox="0 0 28 28"
+                                                fill="var(--text-secondary)" class="chakra-icon chakra-icon-hover"
+                                                color="var(--text-secondary)" aria-hidden="true" focusable="false">
+                                                <path
+                                                    d="M17.5 7.875C17.0358 7.87488 16.5906 7.69035 16.2624 7.362C15.9342 7.03365 15.7499 6.58837 15.75 6.12413C15.7501 5.65988 15.9346 5.2147 16.263 4.88651C16.5914 4.55832 17.0366 4.37401 17.5009 4.37413C17.7307 4.37418 17.9584 4.41952 18.1707 4.50754C18.3831 4.59556 18.576 4.72454 18.7385 4.88713C18.901 5.04971 19.0299 5.24271 19.1178 5.4551C19.2057 5.6675 19.2509 5.89513 19.2509 6.125C19.2508 6.35487 19.2055 6.58248 19.1175 6.79483C19.0294 7.00718 18.9005 7.20012 18.7379 7.36262C18.5753 7.52512 18.3823 7.65401 18.1699 7.74192C17.9575 7.82984 17.7299 7.87506 17.5 7.875ZM20.8757 5.25C20.4846 3.745 19.1257 2.625 17.5 2.625C15.8743 2.625 14.5154 3.745 14.1243 5.25H3.5V7H14.1243C14.5154 8.505 15.8743 9.625 17.5 9.625C19.1257 9.625 20.4846 8.505 20.8757 7H24.5V5.25H20.8757ZM17.5 23.625C17.2701 23.6249 17.0425 23.5796 16.8302 23.4916C16.6178 23.4036 16.4249 23.2746 16.2624 23.112C16.0999 22.9494 15.971 22.7564 15.8831 22.544C15.7952 22.3316 15.7499 22.104 15.75 21.8741C15.7501 21.6443 15.7954 21.4166 15.8834 21.2043C15.9714 20.9919 16.1004 20.799 16.263 20.6365C16.4256 20.474 16.6186 20.3451 16.831 20.2572C17.0434 20.1693 17.271 20.1241 17.5009 20.1241C17.9651 20.1242 18.4103 20.3088 18.7385 20.6371C19.0667 20.9655 19.251 21.4108 19.2509 21.875C19.2508 22.3392 19.0662 22.7844 18.7379 23.1126C18.4095 23.4408 17.9642 23.6251 17.5 23.625ZM17.5 18.375C15.8743 18.375 14.5154 19.495 14.1243 21H3.5V22.75H14.1243C14.5154 24.255 15.8743 25.375 17.5 25.375C19.1257 25.375 20.4846 24.255 20.8757 22.75H24.5V21H20.8757C20.4846 19.495 19.1257 18.375 17.5 18.375ZM10.5 15.75C10.2701 15.7499 10.0425 15.7046 9.83017 15.6166C9.61782 15.5286 9.42488 15.3996 9.26238 15.237C9.09988 15.0744 8.97099 14.8814 8.88308 14.669C8.79516 14.4566 8.74994 14.229 8.75 13.9991C8.75006 13.7693 8.79539 13.5416 8.88341 13.3293C8.97143 13.1169 9.10042 12.924 9.263 12.7615C9.42558 12.599 9.61858 12.4701 9.83098 12.3822C10.0434 12.2943 10.271 12.2491 10.5009 12.2491C10.9651 12.2492 11.4103 12.4338 11.7385 12.7621C12.0667 13.0905 12.251 13.5358 12.2509 14C12.2508 14.4642 12.0662 14.9094 11.7379 15.2376C11.4095 15.5658 10.9642 15.7501 10.5 15.75ZM10.5 10.5C8.87425 10.5 7.51538 11.62 7.12425 13.125H3.5V14.875H7.12425C7.51538 16.38 8.87425 17.5 10.5 17.5C12.1257 17.5 13.4846 16.38 13.8757 14.875H24.5V13.125H13.8757C13.4846 11.62 12.1257 10.5 10.5 10.5Z">
+                                                </path>
+                                            </svg></span>0.5%
+                                    </button>
+                                </div>
+                                <div class="clickable-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        class="chakra-icon" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.5918 9.70521C7.89412 10.1098 8.27984 10.4446 8.72278 10.6869C9.16572 10.9291 9.65552 11.0732 10.159 11.1093C10.6624 11.1454 11.1677 11.0726 11.6406 10.8961C12.1135 10.7195 12.543 10.4431 12.8998 10.0858L15.0117 7.97158C15.6529 7.30701 16.0077 6.41692 15.9997 5.49303C15.9917 4.56914 15.6215 3.68537 14.9689 3.03205C14.3163 2.37874 13.4334 2.00816 12.5105 2.00013C11.5876 1.9921 10.6985 2.34727 10.0346 2.98913L8.82376 4.19422"
+                                            stroke="#8C6EEF" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M10.408 8.29587C10.1057 7.89127 9.71999 7.55648 9.27705 7.31423C8.83411 7.07197 8.34431 6.92791 7.84086 6.89181C7.33741 6.85572 6.8321 6.92844 6.3592 7.10503C5.88629 7.28163 5.45686 7.55797 5.10002 7.91532L2.98808 10.0295C2.3469 10.6941 1.99211 11.5842 2.00013 12.5081C2.00815 13.4319 2.37834 14.3157 3.03096 14.969C3.68357 15.6223 4.56641 15.9929 5.48932 16.001C6.41222 16.009 7.30136 15.6538 7.96522 15.012L9.16902 13.8069"
+                                            stroke="#22D1F8" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg></div>
+                                <div class="clickable-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        focusable="false" class="chakra-icon">
+                                        <rect x="4" y="6" width="6" height="7" fill="#8C6EEF"></rect>
+                                        <rect x="11" y="6" width="3" height="7" fill="#22D1F8"></rect>
+                                        <path d="M4 17L2 14.5" stroke="#22D1F8" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M16 10V11.5C16 12.2956 15.6722 13.0587 15.0888 13.6213C14.5053 14.1839 13.714 14.5 12.8889 14.5H2"
+                                            stroke="#22D1F8" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M14 1.5L16 4" stroke="#22D1F8" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M2 8V6.66667C2 5.95942 2.32778 5.28115 2.91122 4.78105C3.49467 4.28095 4.28599 4 5.11111 4H16"
+                                            stroke="#22D1F8" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg></div>
+                                <div class="clickable-icon"><svg viewBox="0 0 18 18" width="18" height="18" fill="none"
+                                        focusable="false" class="chakra-icon">
+                                        <path d="M1 2.5V15.5H17" stroke="#22D1F8" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <rect x="3.5" y="6" width="3" height="7" fill="#22D1F8"></rect>
+                                        <rect x="8.5" y="4" width="3" height="9" fill="#8C6EEF"></rect>
+                                        <rect x="13.5" y="2" width="3" height="11" fill="#22D1F8"></rect>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swap-panel-area">
+                        <div class="swap-panel">
+                            <div class="swap-form-container">
+                                <div class="token-input-wrapper">
+                                    <div class="token-input-header">
+                                        <div class="token-input-label">From</div>
+                                        <div class="token-input-header-spacer"></div>
+                                        <div class="balance-container"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="currentColor" class="chakra-icon" color="var(--text-tertiary)">
+                                                <path
+                                                    d="M13.8205 12.2878C13.8205 12.4379 13.791 12.5865 13.7335 12.7252C13.6761 12.8638 13.5919 12.9898 13.4858 13.0959C13.3797 13.2021 13.2537 13.2863 13.115 13.3437C12.9764 13.4011 12.8278 13.4307 12.6777 13.4307H3.04911C2.746 13.4307 2.45531 13.3103 2.24099 13.0959C2.02666 12.8816 1.90625 12.5909 1.90625 12.2878V4.18992C1.90625 3.68474 2.10693 3.20026 2.46414 2.84305C2.82135 2.48584 3.30584 2.28516 3.81101 2.28516H10.3718C10.6749 2.28516 10.9656 2.40556 11.1799 2.61989C11.3942 2.83422 11.5146 3.12491 11.5146 3.42801L11.5142 4.20668H12.6777C12.8278 4.20668 12.9764 4.23624 13.115 4.29367C13.2537 4.35111 13.3797 4.43529 13.4858 4.54141C13.5919 4.64754 13.6761 4.77353 13.7335 4.91218C13.791 5.05084 13.8205 5.19946 13.8205 5.34954V12.2878ZM12.6777 5.34954H3.04911V12.2878H12.6777L12.6773 10.356H8.43996V7.28173L12.6773 7.28135V5.34992L12.6777 5.34954ZM12.6777 8.4242H9.58244V9.21316H12.6773V8.42459L12.6777 8.4242ZM10.3718 3.42801H3.81101C3.60894 3.42801 3.41515 3.50829 3.27226 3.65117C3.12938 3.79405 3.04911 3.98785 3.04911 4.18992L3.04873 4.20668H10.3714V3.42801H10.3718Z">
+                                                </path>
+                                            </svg>
+                                            <p class="balance-text">0</p>
+                                        </div>
+                                        <div class="amount-buttons-container"><button type="button"
+                                                class="button button-amount">Max</button><button type="button"
+                                                class="button button-amount">50%</button></div>
+                                    </div>
+                                    <div class="token-input-grid">
+                                        <div class="token-selector-button">
+                                            <div class="icon-text-group">
+                                                <div class="token-avatar">
+                                                    <div class="token-avatar-image-wrapper"><img
+                                                            alt="11111111111111111111111111111111"
+                                                            src="https://img-v1.raydium.io/icon/So11111111111111111111111111111111111111112.png"
+                                                            loading="lazy" class="token-avatar-image"></div>
+                                                </div>
+                                                <p class="token-name">SOL</p><svg width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" class="chakra-icon"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="amount-input-container"><input inputmode="decimal" placeholder
+                                                name="swap" min="0" type="text" value=""
+                                                style="text-align:end;background:0 0;opacity:1;width:100%"></div>
+                                        <div class="amount-usd-value-container">
+                                            <p class="amount-usd-value">~$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swap-icon-container"><svg width="40" height="40" viewBox="0 0 40 40"
+                                        focusable="false" class="chakra-icon">
+                                        <circle cx="20" cy="20" r="20" fill="var(--icon-bg)" stroke="none"></circle>
+                                        <path d="M20 13.582L20 26.4154" fill="none" stroke="var(--icon-empty-stroke)"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M26.418 20L20.0013 26.4167L13.5846 20" fill="none"
+                                            stroke="var(--icon-empty-stroke)" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg></div>
+                                <div class="token-input-wrapper">
+                                    <div class="token-input-header">
+                                        <div class="token-input-label">To</div>
+                                        <div class="token-input-header-spacer"></div>
+                                        <div class="balance-container"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="currentColor" class="chakra-icon" color="var(--text-tertiary)">
+                                                <path
+                                                    d="M13.8205 12.2878C13.8205 12.4379 13.791 12.5865 13.7335 12.7252C13.6761 12.8638 13.5919 12.9898 13.4858 13.0959C13.3797 13.2021 13.2537 13.2863 13.115 13.3437C12.9764 13.4011 12.8278 13.4307 12.6777 13.4307H3.04911C2.746 13.4307 2.45531 13.3103 2.24099 13.0959C2.02666 12.8816 1.90625 12.5909 1.90625 12.2878V4.18992C1.90625 3.68474 2.10693 3.20026 2.46414 2.84305C2.82135 2.48584 3.30584 2.28516 3.81101 2.28516H10.3718C10.6749 2.28516 10.9656 2.40556 11.1799 2.61989C11.3942 2.83422 11.5146 3.12491 11.5146 3.42801L11.5142 4.20668H12.6777C12.8278 4.20668 12.9764 4.23624 13.115 4.29367C13.2537 4.35111 13.3797 4.43529 13.4858 4.54141C13.5919 4.64754 13.6761 4.77353 13.7335 4.91218C13.791 5.05084 13.8205 5.19946 13.8205 5.34954V12.2878ZM12.6777 5.34954H3.04911V12.2878H12.6777L12.6773 10.356H8.43996V7.28173L12.6773 7.28135V5.34992L12.6777 5.34954ZM12.6777 8.4242H9.58244V9.21316H12.6773V8.42459L12.6777 8.4242ZM10.3718 3.42801H3.81101C3.60894 3.42801 3.41515 3.50829 3.27226 3.65117C3.12938 3.79405 3.04911 3.98785 3.04911 4.18992L3.04873 4.20668H10.3714V3.42801H10.3718Z">
+                                                </path>
+                                            </svg>
+                                            <p class="balance-text">0</p>
+                                        </div>
+                                        <div class="amount-buttons-container"><button type="button"
+                                                class="button button-amount">Max</button><button type="button"
+                                                class="button button-amount">50%</button></div>
+                                    </div>
+                                    <div class="token-input-grid">
+                                        <div class="token-selector-button">
+                                            <div class="icon-text-group">
+                                                <div class="token-avatar">
+                                                    <div class="token-avatar-image-wrapper"><img
+                                                            alt="4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+                                                            src="https://img-v1.raydium.io/icon/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R.png"
+                                                            loading="lazy" class="token-avatar-image"></div>
+                                                </div>
+                                                <p class="token-name">RAY</p><svg width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" class="chakra-icon"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="amount-input-container"><input inputmode="decimal" placeholder
+                                                name="swap" min="0" type="text" value=""
+                                                style="text-align:end;background:0 0;opacity:1;width:100%"></div>
+                                        <div class="amount-usd-value-container">
+                                            <p class="amount-usd-value">~$0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="button button-solid" id="connect-wallet-button-2">Connect Wallet</button>
+                        </div>
+                    </div>
+                    <div class="kline-area">
+                        <div class="kline-container" style="height:522px">
+                            <div class="kline-header">
+                                <div class="kline-token-icons">
+                                    <div class="token-icon-primary">
+                                        <div class="token-avatar-image-wrapper"><img
+                                                alt="4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+                                                src="https://img-v1.raydium.io/icon/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R.png"
+                                                loading="lazy" class="token-avatar-image"></div>
+                                    </div>
+                                    <div class="token-icon-secondary">
+                                        <div class="token-avatar-image-wrapper"><img
+                                                alt="11111111111111111111111111111111"
+                                                src="https://img-v1.raydium.io/icon/So11111111111111111111111111111111111111112.png"
+                                                loading="lazy" class="token-avatar-image"></div>
+                                    </div>
+                                </div>
+                                <div class="icon-text-group">
+                                    <p class="kline-pair-text">RAY / SOL</p>
+                                    <div class="clickable-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                            fill="#ABC4FF" class="chakra-icon">
+                                            <path
+                                                d="M13.998 9.42549H1.57079C1.49222 9.42549 1.42793 9.48978 1.42793 9.56835V10.6398C1.42793 10.7184 1.49222 10.7827 1.57079 10.7827H12.3783L9.80144 14.0507C9.72822 14.1435 9.79429 14.2828 9.91394 14.2828H11.2086C11.2961 14.2828 11.3783 14.2435 11.4336 14.1739L14.448 10.3505C14.7427 9.97551 14.4766 9.42549 13.998 9.42549V9.42549ZM14.4284 5.21106H3.62086L6.19774 1.94309C6.27096 1.85023 6.20488 1.71094 6.08523 1.71094H4.79055C4.70304 1.71094 4.6209 1.75022 4.56554 1.81987L1.55115 5.64322C1.25649 6.01823 1.52258 6.56825 1.99938 6.56825H14.4284C14.507 6.56825 14.5712 6.50396 14.5712 6.42539V5.35392C14.5712 5.27535 14.507 5.21106 14.4284 5.21106Z">
+                                            </path>
+                                        </svg></div>
+                                    <p class="kline-timestamp" id="chart-timestamp">25/06/20 21:06</p>
+                                </div>
+                            </div>
+                            <img src="../assets/images/1.png" alt="График" class="kline-chart-image">
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        </main>
+    </div>
+
+    <div id="modal-container"></div>
+    
+    <script src="../assets/js/script.js" defer></script>
+</body>
+
+</html>
